@@ -79,9 +79,9 @@ void patienceSort(T *&elementsList, int size)
             newVector[newVector.size() - 1].push(elementsList[i]);
         }
     }
+    delete[] elementsList;
     cout << "At start" << endl;
     printStackVector<T>(newVector);
-    delete[] elementsList;
     elementsList = new T[size];
     auto getLowest = [](vector<stack<T>> &elements) {
         T lowest = 100000000;
