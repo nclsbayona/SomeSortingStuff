@@ -37,7 +37,7 @@ public class PatienceSort<T extends Comparable<T>> {
         this.vector.clear();
         for (int i = 0; i < size; ++i)
             getLowest(vecStacks);
-        System.out.println(this.vector);
+        //System.out.println(this.vector);
     }
 
     private void getLowest(ArrayList<ArrayList<T>> vecStacks) {
