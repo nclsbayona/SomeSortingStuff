@@ -3,7 +3,7 @@ import java.time.Instant;
 
 public class JavaTrial {
     public static void main(String[] args) {
-        int max = 25000000;
+        int max = 10;
         double a = 0;
         for (int i = 0; i < max; ++i) {
             Instant start = Instant.now();
