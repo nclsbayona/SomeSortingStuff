@@ -40,12 +40,12 @@ def main():
     sorted = patienceSort(unsorted)
     timei=0
     num=250000
+    print("\nSorted\n", sorted)
     for i in range (num):
         timei += timeit(setup="from __main__ import patienceSort",
                    stmt=testCode,
                    number=1)
 
-    print("\nSorted\n", sorted)
     print ("{:.6f}".format(timei/num))
 
 
