@@ -12,9 +12,6 @@ public class JavaTrial {
             patienceSort.patienceSort();
             Instant finish = Instant.now();
             a += Duration.between(start, finish).toMillis();
-            /*
-             * patienceSort.addElement(233); patienceSort.patienceSort();
-             */
         }
         a /= max;
         System.out.println(a);
