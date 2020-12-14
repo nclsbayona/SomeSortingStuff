@@ -127,5 +127,5 @@ int main()
     printArray<typeof(*toOrder)>(toOrder, TAM);
     sort(&elements[0], &elements[TAM]);    
     for (int i = 0; i < TAM; i++)
-        cout<<elements[i]<<" ";
+        cout<<elements[i]<<' ';
 }
