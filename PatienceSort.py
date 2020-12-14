@@ -1,4 +1,5 @@
 def patienceSort(vector: list):
+    i=0
     vecStacks = list()
     inserted: bool
     size: int = len(vector)
@@ -12,8 +13,10 @@ def patienceSort(vector: list):
             vecStacks.append([num])
 
     def getLowestElement(vecStacks: list):
+
         lowest = 999999
         index = -1
+        
         for i in range(len(vecStacks)):
             elemen = vecStacks[i][len(vecStacks[i]) - 1]
             if (elemen < lowest):
@@ -21,15 +24,17 @@ def patienceSort(vector: list):
                 lowest = elemen
 
         vecStacks[index].pop()
-
+        
         if len(vecStacks[index]) == 0:
             del vecStacks[index]
 
         return lowest
 
     vector.clear()
+    
     for i in range(size):
         vector.append(getLowestElement(vecStacks))
+    del i
     return vector
 
 
@@ -45,7 +50,7 @@ def main():
         timei += timeit(setup="from __main__ import patienceSort",
                    stmt=testCode,
                    number=1)
-
+    del i
     print ("{:.6f}".format(timei/num))
 
 

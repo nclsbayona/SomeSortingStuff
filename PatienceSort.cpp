@@ -1,6 +1,4 @@
-#include <iostream>
-#include <stack>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 const int TAM = 13;
 template <typename T>
@@ -121,12 +119,12 @@ int main()
     int *toOrder = new int[TAM];
     int elements[TAM] = {89, 144, 55, 1, 13, 21, 2, 34, 0, 1, 8, 5, 3};
     for (int i = 0; i < TAM; i++)
-    {
         toOrder[i] = elements[i];
-    }
     cout << "\nInitial\n";
     printArray<typeof(*toOrder)>(toOrder, TAM);
     patienceSort<typeof(*toOrder)>(toOrder, TAM);
     cout << "\nFinal\n";
     printArray<typeof(*toOrder)>(toOrder, TAM);
+    sort(&elements[0], &elements[TAM]);    for (int i = 0; i < TAM; i++)
+        cout<<elements[i]<<" ";
 }
