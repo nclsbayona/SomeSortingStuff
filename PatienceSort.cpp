@@ -125,7 +125,7 @@ int main()
     patienceSort<typeof(*toOrder)>(toOrder, TAM);
     cout << "\nFinal\n";
     printArray<typeof(*toOrder)>(toOrder, TAM);
-    sort(&elements[0], &elements[TAM]);    
+    sort(elements, elements+TAM);    
     for (int i = 0; i < TAM; i++)
         cout<<elements[i]<<' ';
 }

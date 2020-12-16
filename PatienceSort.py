@@ -12,6 +12,19 @@ def patienceSort(vector: list):
         if not inserted:
             vecStacks.append([num])
 
+    '''
+    def printSingleStack(stack: list):
+        cop=stack.copy()
+        for num in (cop[::-1]):
+            print(num, end=' | ')
+        del cop
+        input()
+
+    
+    for stack in vecStacks:
+        printSingleStack(stack)
+    '''
+
     def getLowestElement(vecStacks: list):
 
         lowest = 999999
