@@ -7,7 +7,7 @@
 #include <unistd.h>
 #endif*/
 using namespace std;
-const int N=10; //Se puede cambiar y no debe pasar nada
+const int N=11; //Se puede cambiar y no debe pasar nada
 void llenarArr(int arr[]){
     srand(time(NULL));
     for (int i=0; i<N; ++i)
